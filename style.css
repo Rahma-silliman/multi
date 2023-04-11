@@ -20,9 +20,9 @@
     width: 170%;
 }
 svg{
-    background-color: red;
-    width: 90px;
-    height: 110px;
+   
+   width: 110px;
+   height: 110px;
    
   
 }
@@ -30,11 +30,25 @@ svg{
 .circl{
     fill:none;
     stroke: white;
-    stroke-width: 9px;
+    stroke-width: 6px;
+    stroke-linecap: round;
     transform: translate(5px,5px);
   position: relative;
-    
-
+  stroke-dasharray: 314;
+  stroke-dashoffset: 314;
+  animation: 2s forwards;
+  
+}
+.circl{
+stroke:antiquewhite;
+    animation: 2s forwards;
+    stroke-dashoffset: none;
+  
+}
+@keyframes circl {
+    to {
+        stroke-dasharray: 100;
+    }
 }
 .car{
   
